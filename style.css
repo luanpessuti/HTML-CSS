@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    background-color: #E6E6FA;
+    color: #E6E6FA;
+}
+
+header{
+    background-color: #4B0082;
+    padding: 2rem;
+    text-align: center;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section{
+    background-color: #9370DB;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #4B0082;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    appearance: none;
+  -webkit-appearance: none;
+  width: 1rem; /* Tamanho da estrela */
+  height: 1rem;
+  background-color: #E6E6FA; /* Cor de fundo */
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  ); /* Forma de estrela */
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid #E6E6FA;
+  transition: all 0.3s ease;
+}
+
+input[type= "text"], input[type="email"], input[type="password"]{
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #4B0082;
+  outline: none;  
+  border-radius: 5px;
+  background-color: #E6E6FA;
+}
+
+input[type="date"]{
+  width: 10%;
+  padding: 0.5rem;
+  border: 2px solid #4B0082;
+  outline: none;
+  border-radius: 5px;
+  background-color: #E6E6FA;
+}
+
+input::placeholder {
+  color: #4B0082;
+}
+
+/* Estilo ao ser selecionado */
+input[type="radio"]:checked, input[type="checkbox"]:checked {
+  background-color: gold; /* Cor dourada para indicar seleção */
+  border-color: gold;
+}
+
+
+/* Adiciona um efeito ao passar o mouse */
+input[type="radio"]:hover, input[type="checkbox"]:hover {
+  border-color: gold;
+  background-color: gold;
+}
+
+/* Espaçamento entre os elementos */
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+select {
+  width: 10%;
+  padding: 0.5rem;
+  border: 2px solid #4B0082;
+  outline: none;
+  border-radius: 5px;
+  background-color: #E6E6FA;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 10rem;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #4B0082;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #E6E6FA;
+  color: #4B0082;
+}
+
+fieldset {
+  border: 2px solid #4B0082;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #4B0082;
+  outline: none;
+  border-radius: 5px;
+  background-color: #E6E6FA;
+}
+
+textarea::placeholder {
+  color: #4B0082;
+}
+
+footer {
+  background-color: #4B0082;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4B0082;
+  color: #E6E6FA;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+}
